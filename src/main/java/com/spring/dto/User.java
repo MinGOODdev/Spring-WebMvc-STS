@@ -8,7 +8,7 @@ public class User {
   private String name;
   private String email;
   private String userType;
-  private int deapartmentId;
+  private int departmentId;
 
   public int getId() {
     return id;
@@ -58,12 +58,12 @@ public class User {
     this.userType = userType;
   }
 
-  public int getDeapartmentId() {
-    return deapartmentId;
+  public int getDepartmentId() {
+    return departmentId;
   }
 
-  public void setDeapartmentId(int deapartmentId) {
-    this.deapartmentId = deapartmentId;
+  public void setDepartmentId(int departmentId) {
+    this.departmentId = departmentId;
   }
 
 }

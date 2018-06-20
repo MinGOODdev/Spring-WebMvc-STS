@@ -14,9 +14,9 @@
 <body>
 
 <h1>Hello World!</h1>
-<a href="user/edit.do?id=3">user/edit.do?id=3</a><br/>
-<a href="user/edit.do?id=4">user/edit.do?id=4</a><br/>
-<a href="user/edit.do?id=5">user/edit.do?id=5</a><br/>
+<a href="user/edit?id=1">user/edit?id=1</a><br/>
+<a href="user/edit?id=2">user/edit?id=2</a><br/>
+<a href="user/edit?id=3">user/edit?id=3</a><br/>
 <a href="hello">hello</a>
 
 </body>

@@ -10,6 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <title>WebMvc</title>
     <style>
         label { margin-top: 20px; }
@@ -24,19 +25,23 @@
         <input class="form-control" type="text" id="id" value="${user.id}" readonly />
 
         <label for="loginId">로그인 ID</label>
-        <input type="text" id="loginId" value="${user.loginId}" />
+        <input class="form-control" type="text" id="loginId" name="loginId" value="${user.loginId}" />
 
         <label for="name">이름</label>
-        <input type="text" id="name" value="${user.name}" />
+        <input class="form-control" type="text" id="name" name="name" value="${user.name}" />
 
         <label for="email">이메일</label>
-        <input type="email" id="email" value="${user.email}" />
+        <input class="form-control" type="email" id="email" name="email" value="${user.email}" />
 
         <label for="userType">사용자 유형</label>
-        <input type="text" id="userType" value="${user.userType}" />
+        <input class="form-control" type="text" id="userType" name="userType" value="${user.userType}" />
 
         <label for="departmentId">학과</label>
-        <input type="text" id="departmentId" value="${user.deapartmentId}" />
+        <input class="form-control" type="text" id="departmentId" name="departmentId" value="${user.departmentId}" />
+        <br/>
+        <div>
+            <button class="btn btn-primary" type="submit">Save</button>
+        </div>
     </form>
 
     <c:if test="${not empty error}">
@@ -46,8 +51,5 @@
     <c:if test="${not empty success}">
         <div class="alert alert-success" role="alert">${success}</div>
     </c:if>
-</div>
-
-
 </body>
 </html>
